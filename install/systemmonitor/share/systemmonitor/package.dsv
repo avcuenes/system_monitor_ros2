@@ -1,0 +1,8 @@
+source;share/systemmonitor/hook/cmake_prefix_path.ps1
+source;share/systemmonitor/hook/cmake_prefix_path.dsv
+source;share/systemmonitor/hook/cmake_prefix_path.sh
+source;share/systemmonitor/local_setup.bash
+source;share/systemmonitor/local_setup.dsv
+source;share/systemmonitor/local_setup.ps1
+source;share/systemmonitor/local_setup.sh
+source;share/systemmonitor/local_setup.zsh

@@ -1,0 +1,71 @@
+[0.026s] Invoking command in '/home/harun/Downloads/system_monitor_ros2/build/systemmonitor': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/harun/Downloads/system_monitor_ros2/src/systemmonitor -DCMAKE_INSTALL_PREFIX=/home/harun/Downloads/system_monitor_ros2/install/systemmonitor
+[0.139s] -- The C compiler identification is GNU 11.4.0
+[0.250s] -- The CXX compiler identification is GNU 11.4.0
+[0.267s] -- Detecting C compiler ABI info
+[0.375s] -- Detecting C compiler ABI info - done
+[0.388s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.388s] -- Detecting C compile features
+[0.389s] -- Detecting C compile features - done
+[0.396s] -- Detecting CXX compiler ABI info
+[0.551s] -- Detecting CXX compiler ABI info - done
+[0.565s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.565s] -- Detecting CXX compile features
+[0.565s] -- Detecting CXX compile features - done
+[0.568s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.835s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.963s] -- Found rclcpp: 16.0.5 (/opt/ros/humble/share/rclcpp/cmake)
+[1.023s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.027s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.037s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.051s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.070s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.165s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.167s] -- Found rmw_fastrtps_cpp: 6.2.3 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.286s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.324s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.377s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.387s] -- Looking for pthread.h
+[1.480s] -- Looking for pthread.h - found
+[1.481s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.578s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.580s] -- Found Threads: TRUE  
+[1.822s] -- Found ament_lint_auto: 0.12.7 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.930s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.932s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.932s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/harun/Downloads/system_monitor_ros2/src/systemmonitor/include>
+[1.932s] -- Configured cppcheck exclude dirs and/or files: 
+[1.934s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.934s] -- Configured cpplint exclude dirs and/or files: 
+[1.935s] -- Added test 'lint_cmake' to check CMake code style
+[1.936s] -- Added test 'uncrustify' to check C / C++ code style
+[1.936s] -- Configured uncrustify additional arguments: 
+[1.937s] -- Added test 'xmllint' to check XML markup files
+[1.938s] -- Configuring done
+[1.948s] -- Generating done
+[1.949s] -- Build files have been written to: /home/harun/Downloads/system_monitor_ros2/build/systemmonitor
+[1.959s] Invoked command in '/home/harun/Downloads/system_monitor_ros2/build/systemmonitor' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/harun/Downloads/system_monitor_ros2/src/systemmonitor -DCMAKE_INSTALL_PREFIX=/home/harun/Downloads/system_monitor_ros2/install/systemmonitor
+[1.962s] Invoking command in '/home/harun/Downloads/system_monitor_ros2/build/systemmonitor': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/harun/Downloads/system_monitor_ros2/build/systemmonitor -- -j8 -l8
+[2.031s] [ 50%] [32mBuilding CXX object CMakeFiles/systemmonitor.dir/src/system_monitor.cpp.o[0m
+[11.153s] [100%] [32m[1mLinking CXX executable systemmonitor[0m
+[11.472s] [100%] Built target systemmonitor
+[11.486s] Invoked command in '/home/harun/Downloads/system_monitor_ros2/build/systemmonitor' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/harun/Downloads/system_monitor_ros2/build/systemmonitor -- -j8 -l8
+[11.511s] Invoking command in '/home/harun/Downloads/system_monitor_ros2/build/systemmonitor': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/harun/Downloads/system_monitor_ros2/build/systemmonitor
+[11.523s] -- Install configuration: ""
+[11.523s] -- Installing: /home/harun/Downloads/system_monitor_ros2/install/systemmonitor/lib/systemmonitor/systemmonitor
+[11.526s] -- Set runtime path of "/home/harun/Downloads/system_monitor_ros2/install/systemmonitor/lib/systemmonitor/systemmonitor" to ""
+[11.527s] -- Installing: /home/harun/Downloads/system_monitor_ros2/install/systemmonitor/share/ament_index/resource_index/package_run_dependencies/systemmonitor
+[11.527s] -- Installing: /home/harun/Downloads/system_monitor_ros2/install/systemmonitor/share/ament_index/resource_index/parent_prefix_path/systemmonitor
+[11.527s] -- Installing: /home/harun/Downloads/system_monitor_ros2/install/systemmonitor/share/systemmonitor/environment/ament_prefix_path.sh
+[11.527s] -- Installing: /home/harun/Downloads/system_monitor_ros2/install/systemmonitor/share/systemmonitor/environment/ament_prefix_path.dsv
+[11.528s] -- Installing: /home/harun/Downloads/system_monitor_ros2/install/systemmonitor/share/systemmonitor/environment/path.sh
+[11.528s] -- Installing: /home/harun/Downloads/system_monitor_ros2/install/systemmonitor/share/systemmonitor/environment/path.dsv
+[11.528s] -- Installing: /home/harun/Downloads/system_monitor_ros2/install/systemmonitor/share/systemmonitor/local_setup.bash
+[11.528s] -- Installing: /home/harun/Downloads/system_monitor_ros2/install/systemmonitor/share/systemmonitor/local_setup.sh
+[11.529s] -- Installing: /home/harun/Downloads/system_monitor_ros2/install/systemmonitor/share/systemmonitor/local_setup.zsh
+[11.529s] -- Installing: /home/harun/Downloads/system_monitor_ros2/install/systemmonitor/share/systemmonitor/local_setup.dsv
+[11.529s] -- Installing: /home/harun/Downloads/system_monitor_ros2/install/systemmonitor/share/systemmonitor/package.dsv
+[11.529s] -- Installing: /home/harun/Downloads/system_monitor_ros2/install/systemmonitor/share/ament_index/resource_index/packages/systemmonitor
+[11.530s] -- Installing: /home/harun/Downloads/system_monitor_ros2/install/systemmonitor/share/systemmonitor/cmake/systemmonitorConfig.cmake
+[11.530s] -- Installing: /home/harun/Downloads/system_monitor_ros2/install/systemmonitor/share/systemmonitor/cmake/systemmonitorConfig-version.cmake
+[11.530s] -- Installing: /home/harun/Downloads/system_monitor_ros2/install/systemmonitor/share/systemmonitor/package.xml
+[11.536s] Invoked command in '/home/harun/Downloads/system_monitor_ros2/build/systemmonitor' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/harun/Downloads/system_monitor_ros2/build/systemmonitor

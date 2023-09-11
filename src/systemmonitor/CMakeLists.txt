@@ -18,13 +18,13 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
-find_package(std_msgs REQUIRED)
+find_package(system_monitor_msgs REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
 add_executable(systemmonitor src/system_monitor.cpp)
-ament_target_dependencies(systemmonitor rclcpp std_msgs)
+ament_target_dependencies(systemmonitor rclcpp system_monitor_msgs)
 
 target_include_directories(systemmonitor PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>

@@ -1,0 +1,4 @@
+source;share/systemmonitor/local_setup.bash
+source;share/systemmonitor/local_setup.dsv
+source;share/systemmonitor/local_setup.sh
+source;share/systemmonitor/local_setup.zsh

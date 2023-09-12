@@ -1,18 +1,35 @@
 #include <sys/sysinfo.h> // Include the sysinfo header
 #include <iostream>
+#include <fstream>
+
+#include <sstream>
+
+#include <string>
 
 double calculateRamUsage()
 {
-    struct sysinfo info;
-    if (sysinfo(&info) == 0)
+     std::ifstream meminfo("/proc/meminfo");
+    std::string line;
+    unsigned long long totalRAM = 0;
+    unsigned long long freeRAM = 0;
+    
+    while (getline(meminfo, line))
     {
-        double mem_percent = (1.0 - static_cast<double>(info.freeram) / static_cast<double>(info.totalram)) * 100.0;
-        return mem_percent;
-    }
-    else
-    {
-        std::cerr << "Failed to read RAM usage." << std::endl;
-        return 0.0;
-    }
-}
+        if (line.find("MemTotal:") != std::string::npos)
+        {
+            std::istringstream iss(line);
+            std::string key;
+            iss >> key >> totalRAM >> std::ws;
+        }
 
+        if (line.find("MemFree:") != std::string::npos)
+        {
+            std::istringstream iss(line);
+            std::string key;
+            iss >> key >> freeRAM >> std::ws;
+        }
+    }
+
+    double usedRAM = static_cast<double>(totalRAM - freeRAM) / (1024.0 * 1024.0); // GB cinsinden hesaplama
+    return usedRAM;
+}

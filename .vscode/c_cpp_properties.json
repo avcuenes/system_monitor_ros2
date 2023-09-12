@@ -1,0 +1,32 @@
+{
+    "configurations": [
+        {
+            "name": "ROS 2",
+            "includePath": [
+                "${workspaceFolder}/build/**",
+                "/opt/ros/humble/include/**" 
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/g++", 
+            "intelliSenseMode": "clang-x64",
+            "compilerArgs": [
+                "-std=c++17",
+                "-I/opt/ros/humble/include", 
+                "-I/opt/ros/humble/share"
+            ],
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/build/**",
+                    "${workspaceFolder}/install/**",
+                    "/opt/ros/humble/lib/**", 
+                    "/opt/ros/humble/share/**"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}

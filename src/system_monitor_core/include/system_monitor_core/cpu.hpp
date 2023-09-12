@@ -1,7 +1,21 @@
+// cpu.hpp
+#ifndef CPUCLASS_H
+#define CPUCLASS_H
 
+#include <string>
 #include <fstream>
+#include "BaseClass.hpp"
 
-double getCpuUsage(std::string name)
+template <typename T>
+class CpuClass : public BaseClass<T>
+{
+public:
+    T reader(std::string name = "") override;
+};
+
+
+template <typename T>
+T CpuClass<T>::reader(std::string name)
 {
     std::ifstream stat(name);
     std::string line;
@@ -15,3 +29,4 @@ double getCpuUsage(std::string name)
     }
     return 0.0;
 }
+#endif

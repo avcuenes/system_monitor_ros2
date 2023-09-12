@@ -4,6 +4,7 @@
             "name": "ROS 2",
             "includePath": [
                 "${workspaceFolder}/build/**",
+                "${workspaceFolder}/install/**/include/**",
                 "/opt/ros/humble/include/**" 
             ],
             "defines": [],
@@ -22,7 +23,7 @@
                     "/opt/ros/humble/share/**"
                 ],
                 "limitSymbolsToIncludedHeaders": true,
-                "databaseFilename": ""
+                "databaseFilename": "",
             },
             "cStandard": "c11",
             "cppStandard": "c++17"

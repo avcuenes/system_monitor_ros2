@@ -25,7 +25,13 @@ target_include_directories(
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>)
 
-  install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION lib/${PROJECT_NAME})
+#launch files
+install(DIRECTORY
+launch
+DESTINATION share/${PROJECT_NAME}/
+)
+
+install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION lib/${PROJECT_NAME})
 
 # uncomment the following section in order to fill in
 # further dependencies manually.

@@ -16,7 +16,7 @@ public:
 template <typename T>
 T TempClass<T>::reader(std::string name)
 {
-    std::ifstream temp_file("/sys/class/thermal/thermal_zone0/temp");
+    std::ifstream temp_file(name);
 
     if (temp_file.is_open())
     {

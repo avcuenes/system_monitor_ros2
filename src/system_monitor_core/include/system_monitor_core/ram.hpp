@@ -20,7 +20,7 @@ template <typename T>
 T RamClass<T>::reader(std::string name)
 {
 
-    std::ifstream meminfo("/proc/meminfo");
+    std::ifstream meminfo(name);
     std::string line;
     unsigned long long totalRAM = 0;
     unsigned long long freeRAM = 0;

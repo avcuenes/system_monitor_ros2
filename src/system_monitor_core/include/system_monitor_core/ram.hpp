@@ -23,7 +23,7 @@ T RamClass<T>::reader(std::string name)
     std::ifstream meminfo(name);
     std::string line;
     unsigned long long totalRAM = 0;
-    unsigned long long freeRAM = 0;
+    unsigned long long availableRAM = 0;
 
     while (getline(meminfo, line))
     {
@@ -34,15 +34,15 @@ T RamClass<T>::reader(std::string name)
             iss >> key >> totalRAM >> std::ws;
         }
 
-        if (line.find("MemFree:") != std::string::npos)
+        if (line.find("MemAvailable:") != std::string::npos)
         {
             std::istringstream iss(line);
             std::string key;
-            iss >> key >> freeRAM >> std::ws;
+            iss >> key >> availableRAM >> std::ws;
         }
     }
 
-    double usedRAM = static_cast<double>(totalRAM - freeRAM) / (1024.0 * 1024.0); // GB cinsinden hesaplama
+    double usedRAM = static_cast<double>(100 * (totalRAM - availableRAM) / totalRAM) ;
     return usedRAM;
 }
 
